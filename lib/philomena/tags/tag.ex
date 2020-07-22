@@ -138,13 +138,10 @@ defmodule Philomena.Tags.Tag do
       &{
         &1.category != "error",
         &1.category != "rating",
-        &1.category != "origin",
-        &1.category != "character",
-        &1.category != "oc",
-        &1.category != "species",
-        &1.category != "content-fanmade",
-        &1.category != "content-official",
+        &1.category != "creator",
+        &1.category != "event",
         &1.category != "spoiler",
+        &1.category != "people",
         &1.name
       }
     )
@@ -154,13 +151,10 @@ defmodule Philomena.Tags.Tag do
     [
       "error",
       "rating",
-      "origin",
-      "character",
-      "oc",
-      "species",
-      "content-fanmade",
-      "content-official",
-      "spoiler"
+      "creator",
+      "event",
+      "spoiler",
+      "people"
     ]
   end
 

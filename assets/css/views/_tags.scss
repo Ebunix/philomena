@@ -58,17 +58,17 @@
 
 // Tags
 .tag {
-  border: 1px solid;
+//  border: 1px solid;
   display: inline-table;
   align-items: center;
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 5px;
-  margin-right: 5px;
+  margin-bottom: 7px;
+  margin-right: 7px;
 }
 
 .tag > span {
-  padding: 5px;
+  padding: 6px;
   display: table-cell;
   white-space: pre;
 }
@@ -111,20 +111,12 @@
       background: $tag_category_spoiler_border;
     }
   }
-  &[data-tag-category="origin"] {
-    background: $tag_category_origin_background;
-    border-color: $tag_category_origin_border;
-    color: $tag_category_origin_color;
+  &[data-tag-category="creator"] {
+    background: $tag_category_creator_background;
+    border-color: $tag_category_creator_border;
+    color: $tag_category_creator_color;
     .tag__count {
-      background: $tag_category_origin_border;
-    }
-  }
-  &[data-tag-category="oc"] {
-    background: $tag_category_oc_background;
-    border-color: $tag_category_oc_border;
-    color: $tag_category_oc_color;
-    .tag__count {
-      background: $tag_category_oc_border;
+      background: $tag_category_creator_border;
     }
   }
   &[data-tag-category="error"] {
@@ -135,36 +127,20 @@
       background: $tag_category_error_border;
     }
   }
-  &[data-tag-category="character"] {
-    background: $tag_category_character_background;
-    border-color: $tag_category_character_border;
-    color: $tag_category_character_color;
+  &[data-tag-category="event"] {
+    background: $tag_category_event_background;
+    border-color: $tag_category_event_border;
+    color: $tag_category_event_color;
     .tag__count {
-      background: $tag_category_character_border;
+      background: $tag_category_event_border;
     }
   }
-  &[data-tag-category="content-official"] {
-    background: $tag_category_content_official_background;
-    border-color: $tag_category_content_official_border;
-    color: $tag_category_content_official_color;
+  &[data-tag-category="people"] {
+    background: $tag_category_people_background;
+    border-color: $tag_category_people_border;
+    color: $tag_category_people_color;
     .tag__count {
-      background: $tag_category_content_official_border;
-    }
-  }
-  &[data-tag-category="content-fanmade"] {
-    background: $tag_category_content_fanmade_background;
-    border-color: $tag_category_content_fanmade_border;
-    color: $tag_category_content_fanmade_color;
-    .tag__count {
-      background: $tag_category_content_fanmade_border;
-    }
-  }
-  &[data-tag-category="species"] {
-    background: $tag_category_species_background;
-    border-color: $tag_category_species_border;
-    color: $tag_category_species_color;
-    .tag__count {
-      background: $tag_category_species_border;
+      background: $tag_category_people_border;
     }
   }
 }
