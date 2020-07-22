@@ -15,6 +15,20 @@
     .dropdown__content
       a.header__link href="/comments"
         | Comments
+
+  a.header__link href="/tags"
+    | Tags
+  a.header__link href="/galleries"
+    | Galleries
+/
+  a.header__link href="/channels"
+    ' Live
+    span.header__counter
+      = @conn.assigns.live_channels
+
+  a.header__link href="/commissions"
+    | Commissions
+
   .dropdown.header__dropdown
     a.header__link href="/forums"
       | Forums
@@ -28,14 +42,3 @@
       a.header__link href="/posts"
         i.fa.fa-fw.fa-search>
         | Post Search
-  a.header__link href="/tags"
-    | Tags
-  a.header__link href="/channels"
-    ' Live
-    span.header__counter
-      = @conn.assigns.live_channels
-
-  a.header__link href="/galleries"
-    | Galleries
-  a.header__link href="/commissions"
-    | Commissions
